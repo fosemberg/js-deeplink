@@ -16,7 +16,7 @@ Links = {
 };
 
 innerHTML = Object.entries(Links)
-  .map(([name, link]) => `${name} <a target="_blank" href="${link}">${link}</a><br>`)
+  .map(([name, link]) => `${name}<br><a target="_blank" href="${link}">${link}</a><br><br>`)
   .join('\n');
 
 document.body.innerHTML = innerHTML;
